@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const fighters = ['Lucina', 'Yoshi', 'Kirby', 'Mewtwo', 'Roy', 'Mario', 'Ness', 'Zelda', 'Kirby', 'Luigi', 'Ike', 'Sora']
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Fighters</h1>
+      <div className="fighters-grid">
+        {
+          fighters.map((element, index) => {
+            return(
+              <div>
+                <img src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${element.toLowerCase()}.png`} alt="" />
+              </div>
+            )
+          })
+        }
+      </div>
     </div>
   );
 }
