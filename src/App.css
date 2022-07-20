@@ -1,19 +1,31 @@
 .App {
   text-align: center;
-  justify-content: center;
 }
 
 .fighters-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  margin: 50px;
 }
 
 .fighters-grid div {
+  position: relative;
   transition: transform 0.3s;
 }
 
 .fighters-grid div:hover {
   transform: scale(1.107);
+}
+
+.fighter-name {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.fighter-image {
+  border-radius: 5px;
+  margin: 5px;
 }
