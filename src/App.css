@@ -43,3 +43,35 @@
   height: auto;
   border-radius: 20px;;
 }
+
+#fighter-screen {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+
+.char-model {
+  position: fixed;
+  bottom: -50%;
+  right: 0%;
+  width: 65%;
+}
+
+.char-name {
+  position: fixed;
+  z-index: 2;
+  text-transform: uppercase;
+  font-style: italic;
+  left: 0;
+  bottom: -50%;
+  font-size: 20em;
+}
+
+.char-name-bg {
+
+}

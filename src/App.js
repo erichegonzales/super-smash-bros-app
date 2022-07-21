@@ -9,13 +9,13 @@ function App() {
     { name: 'Lucina', color: '#81A7CC'}, 
     { name: 'Kirby', color: '#FFD6E8'}, 
     { name: 'Pikachu', color: '#FFB916'}, 
-    { name: 'Ness', color: '#E14041'}, 
+    { name: 'Roy', color: '#E14041'}, 
     { name: 'Zelda', color: '	#FFEAAA'}, 
     { name: 'Mewtwo', color: '#957BC8'}, 
     { name: 'Mario', color: '	#FF412D'}, 
     { name: 'Pit', color: '#B1DAFF'}, 
     { name: 'Jigglypuff', color: '#F79BFA'}, 
-    { name: 'Ike', color: '#B94E41'}, 
+    { name: 'Palutena', color: '#96E4C7'}, 
     { name: 'Luigi', color: '#62A446'}, 
   ]
 
@@ -28,7 +28,7 @@ function App() {
         {
           fighters.map((element, index) => {
             return (
-              <Fighter fighter={element} setSelectedFighter={setSelectedFighter}/>
+              <Fighter fighter={element} setSelectedFighter={setSelectedFighter} />
             )
           })
         }
@@ -36,8 +36,8 @@ function App() {
       {
         // Conditional render (based on ternary)
         selectedFighter ?
-        <FighterScreen />
-        : null
+          <FighterScreen selectedFighter={selectedFighter} />
+          : null
       }
     </div>
   );
