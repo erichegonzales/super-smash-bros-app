@@ -17,12 +17,15 @@
   width: 200px;
   position: relative;
   transition: transform 0.3s;
-  background-color: slategray;
+  /*background-color: slategray;*/
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px gray;
 }
 
 .fighters-grid div:hover {
   transform: scale(1.07);
   cursor: pointer;
+  z-index: +1;
 }
 
 .fighter-name {
@@ -38,4 +41,5 @@
 .fighter-img {
   width: 100%;
   height: auto;
+  border-radius: 20px;;
 }
